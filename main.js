@@ -10,3 +10,11 @@ var config = {
   firebase.initializeApp(config);
 
   var database = firebase.database();
+
+  $('#submit').on('click', function(){
+    event.preventDefault();
+      var train = $('#formGroupExampleInput').val().trim();
+      var destination = $('#formGroupExampleInput2').val().trim();
+      var firstTrain = $('#formGroupExampleInput3').val().trim();
+      var frequency = $('#formGroupExampleInput4').val().trim();
+  })
